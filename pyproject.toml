@@ -10,3 +10,14 @@ dependencies = [
     "pandas>=3.0.1",
     "scikit-learn>=1.8.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+]
